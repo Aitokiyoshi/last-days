@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #btn_mau {
+        margin-right: 2em;
+      }
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background-color: #fff;
+        color: #000;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+        margin-top: 2em;
+      }
+      button {
+        text-align: center;
+      }
+      .gif {
+        margin: auto;
+        width: auto;
+      }
+      button {
+        margin: auto;
+        width: auto;
+        text-align: center;
+      }
+      .btn {
+        margin: auto;
+        width: 10em;
+        margin-bottom: 5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hai cantik</h1>
+    <div
+      class="tenor-gif-embed gif"
+      data-postid="17076830"
+      data-share-method="host"
+      data-aspect-ratio="1"
+      data-width="30%"
+    >
+      <a
+        href="https://tenor.com/view/happy-birthday-birthday-cake-happy-celebrate-dance-gif-17076830"
+      ></a
+      >from
+      <a href="https://tenor.com/search/happy+birthday-gifs"></a>
+    </div>
+    <h1>Happy Birthday</h1>
+    <div class="btn">
+      <button
+        id="btn_mau"
+        onclick="alert('Semoga sehat panjang umur dan semua mimpi terkabulkan, jangan lupa tersenyum hehehe')"
+      >
+        iya sama-sama
+      </button>
+      <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+        kado
+      </button>
+    </div>
+    <audio autoplay loop hidden>
+      <source src="music/music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+  <script
+    type="text/javascript"
+    async
+    src="https://tenor.com/embed.js"
+  ></script>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 400) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.right = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
